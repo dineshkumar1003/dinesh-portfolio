@@ -1,3 +1,11 @@
+import dineshImg from "./assets/dinesh.jpg"
+import {
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPhone,
+} from "react-icons/fa"
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#020617] via-[#0f172a] to-black text-white overflow-x-hidden scroll-smooth font-sans">
@@ -118,11 +126,11 @@ function App() {
 
     <div className="absolute inset-0 bg-cyan-500 blur-3xl opacity-30 rounded-full"></div>
 
-    <img
-      src="/dinesh.jpg"
-      alt="Dinesh"
-      className="relative w-[320px] h-[320px] object-cover rounded-full border-4 border-cyan-400 shadow-2xl shadow-cyan-500/30 hover:scale-105 transition duration-500"
-    />
+ <img
+  src={dineshImg}
+  alt="Dinesh"
+  className="relative w-[320px] h-[320px] object-cover rounded-full border-4 border-cyan-400 shadow-2xl shadow-cyan-500/30 hover:scale-105 transition duration-500"
+/>
 
   </div>
 
@@ -367,52 +375,85 @@ function App() {
 
       </section>
 
-      {/* Contact */}
-      <section
-        id="contact"
-        className="py-24 px-8 md:px-20"
+   {/* Contact */}
+<section
+  id="contact"
+  className="py-24 px-8 md:px-20"
+>
+
+  <h2 className="text-5xl font-black text-center mb-14 bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
+    Contact Me
+  </h2>
+
+  <div className="max-w-5xl mx-auto bg-white/5 border border-cyan-500/20 backdrop-blur-xl rounded-3xl p-12">
+
+    <div className="flex justify-center gap-12 flex-wrap">
+
+      {/* LinkedIn */}
+      <a
+        href="https://linkedin.com/in/dinesh1002"
+        target="_blank"
+        rel="noreferrer"
+        className="flex flex-col items-center gap-4 hover:scale-110 transition duration-300"
       >
+        <FaLinkedin className="text-[60px] text-[#0A66C2]" />
+        <span className="text-gray-300 font-medium">
+          LinkedIn
+        </span>
+      </a>
 
-        <h2 className="text-5xl font-black text-center mb-14 bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
-          Contact Me
-        </h2>
+      {/* GitHub */}
+      <a
+        href="https://github.com/dineshkumar1003"
+        target="_blank"
+        rel="noreferrer"
+        className="flex flex-col items-center gap-4 hover:scale-110 transition duration-300"
+      >
+        <FaGithub className="text-[60px] text-white" />
+        <span className="text-gray-300 font-medium">
+          GitHub
+        </span>
+      </a>
 
-        <div className="max-w-5xl mx-auto bg-white/5 border border-cyan-500/20 backdrop-blur-xl rounded-3xl p-12 text-center hover:border-cyan-400 transition duration-300">
+      {/* Email */}
+      <a
+        href="mailto:Dineshsk1003@gmail.com"
+        className="flex flex-col items-center gap-4 hover:scale-110 transition duration-300"
+      >
+        <FaEnvelope className="text-[60px] text-red-400" />
+        <span className="text-gray-300 font-medium">
+          Dineshsk1003@gmail.com
+        </span>
+      </a>
 
-          <div className="space-y-6 text-lg text-gray-300">
+      {/* Location */}
+      <a
+        href="https://maps.app.goo.gl/cN3zArHZV8esES378"
+        target="_blank"
+        rel="noreferrer"
+        className="flex flex-col items-center gap-4 hover:scale-110 transition duration-300"
+      >
+        <FaMapMarkerAlt className="text-[60px] text-green-400" />
+        <span className="text-gray-300 font-medium text-center">
+          Attur, Salem, Tamil Nadu
+        </span>
+      </a>
+      {/* Phone */}
+<a
+  href="tel:+916374689844"
+  className="flex flex-col items-center gap-4 hover:scale-110 transition duration-300"
+>
+  <FaPhone className="text-[60px] text-cyan-400" />
+  <span className="text-gray-300 font-medium">
+    +91 6374689844
+  </span>
+</a>
 
-            <p>📧 Dineshsk1003@gmail.com</p>
+    </div>
 
-            <p>📱 +91 6374689844</p>
+  </div>
 
-            <p>📍  Attur - 636107, Salem District, Tamil Nadu</p>
-
-          </div>
-
-          <div className="flex justify-center gap-8 mt-10 flex-wrap">
-
-            <a
-              href="https://linkedin.com/in/dinesh1002"
-              target="_blank"
-              className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-3 rounded-2xl font-bold transition duration-300 hover:scale-105"
-            >
-              LinkedIn
-            </a>
-
-            <a
-              href="https://github.com/dineshkumar1003"
-              target="_blank"
-              className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-6 py-3 rounded-2xl font-bold transition duration-300 hover:scale-105"
-            >
-              GitHub
-            </a>
-
-          </div>
-
-        </div>
-
-      </section>
-
+</section>
       {/* Footer */}
       <footer className="py-8 text-center border-t border-cyan-500/10 text-gray-500">
         © 2026 Dinesh. All rights reserved.
